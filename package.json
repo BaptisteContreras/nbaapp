@@ -1,0 +1,25 @@
+{
+  "name": "nbaapp",
+  "version": "1.0.0",
+  "description": "nba stat application",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BaptisteContreras/nbaapp.git"
+  },
+  "author": "baptiste conrtreras",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BaptisteContreras/nbaapp/issues"
+  },
+  "homepage": "https://github.com/BaptisteContreras/nbaapp#readme"
+}

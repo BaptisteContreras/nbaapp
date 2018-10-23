@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Debug page</title>
+</head>
+<body>
+<h1>Debug page</h1>
+<ul>
+  <%   for(i=0;i< r.league.standard.length;i++){  %>
+    <% if(r.league.standard[i].lastName==="James"){ %>
+    <p><%= r.league.standard[i].firstName %> <%= r.league.standard[i].lastName %></p>
+    <p> ID : <%= r.league.standard[i].personId %> / team ID : <%= r.league.standard[i].teamId %></p>
+    <% } %>
+
+
+     <% } %>
+
+
+</ul>
+</body>
+
+</html>
