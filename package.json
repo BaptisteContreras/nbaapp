@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "axios": "^0.18.0",
+    "edit-json-file": "^1.1.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4"
   },

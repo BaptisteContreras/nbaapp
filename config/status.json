@@ -1,6 +1,24 @@
-
 {
-    "init" :false,
-    "PLAYERS_UPDATE":false,
-    "TEAMS_UPDATE":false
+  "init": false,
+  "nodeServer": {
+    "version": 0.1,
+    "mode": "dev"
+  },
+  "phpServer": {
+    "version": 0.1,
+    "mode": "dev",
+    "url": "http://localhost/apinba/apinba/apinba/public/"
+  },
+  "clientSupported": [
+    "electron",
+    "vuejs"
+  ],
+  "players": {
+    "PLAYERS_UPDATE": false,
+    "LAST_UPDATE": false
+  },
+  "teams": {
+    "TEAMS_UPDATE": false,
+    "LAST_UPDATE": false
+  }
 }

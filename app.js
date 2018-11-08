@@ -1,4 +1,5 @@
 let app = require('express')()
+let initializer = require('./lib/repo/InitRepository.js')
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
@@ -25,6 +26,30 @@ app.get('/', (request, response) => {
             // always executed
         });
 
+
+})
+
+app.get('/init', (request, response) => {
+    axios.get('https://stats.nba.com/js/data/widgets/teams_landing_inner.json')
+        .then(function (teams) {
+            //response.render('index', {r : resp.data})
+            axios.get('10s/prod/v1/2018/players.json')
+                .then(function (players) {
+                    initializer.initFirst("a",players.data)
+            })
+            .catch(function (error) {
+                console.log(error);
+            })
+           
+        })
+        .catch(function (error) {
+            // handle error
+            console.log(error);
+        })
+        .then(function () {
+            
+        });
+        
 
 })
 
